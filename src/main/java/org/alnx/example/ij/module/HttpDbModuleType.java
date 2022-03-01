@@ -1,15 +1,13 @@
 package org.alnx.example.ij.module;
 
+import com.intellij.icons.AllIcons;
 import com.intellij.ide.util.projectWizard.ModuleWizardStep;
 import com.intellij.ide.util.projectWizard.WizardContext;
 import com.intellij.openapi.module.ModuleType;
 import com.intellij.openapi.module.ModuleTypeManager;
-import com.intellij.openapi.projectRoots.Sdk;
 import com.intellij.openapi.roots.ui.configuration.ModulesProvider;
 import org.jetbrains.annotations.Nls;
-import org.jetbrains.annotations.NonNls;
 import org.jetbrains.annotations.NotNull;
-
 
 import javax.swing.*;
 
@@ -45,7 +43,8 @@ public class HttpDbModuleType extends ModuleType<HttpDbModuleBuilder> {
         //var url = getClass().getResource("/images/moduleIcon.PNG");
         //ImageIcon ii = new ImageIcon(url, "module icon");
         //TODO: icon doesn't appear, needs fixing
-        return new ImageIcon("images/moduleIconWhite.PNG");
+        //new ImageIcon("images/moduleIconWhite.PNG");
+        return AllIcons.General.ArrowUp;
     }
 
     @Override

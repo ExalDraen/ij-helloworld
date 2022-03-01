@@ -12,6 +12,6 @@ public class HttpDbWizardStep extends ModuleWizardStep {
 
     @Override
     public void updateDataModel() {
-        // do something useful.
+        // update the data model in the UI, e.g. names and directories and settings type
     }
 }
