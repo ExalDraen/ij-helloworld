@@ -6,12 +6,16 @@ plugins {
 group = "org.alnx.example"
 version = "1.0-SNAPSHOT"
 
+tasks.compileJava {
+    options.release.set(11)
+}
+
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.6.0")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.2")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
 }
 

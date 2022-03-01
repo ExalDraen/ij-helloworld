@@ -14,6 +14,10 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
+        <moduleBuilder builderClass="org.alnx.example.ij.module.HttpDbModuleBuilder"
+                       id="HTTPDB_STEP"
+                       order="first"/>
+        <moduleType id="DEMO_HTTPDB_MOD_TYPE" implementationClass="org.alnx.example.ij.module.HttpDbModuleType" />
     </extensions>
 
     <actions>
