@@ -1,0 +1,22 @@
+<idea-plugin>
+    <id>org.alnx.example.ij-helloworld</id>
+    <name>Hello World of IJ </name>
+    <vendor email="mail@alnx.org" url="http://www.alnx.org">Alnx</vendor>
+
+    <description><![CDATA[
+    Just using this for testing to see how IJ dev works <br>
+    <strong>Let's do this!</strong>
+    ]]></description>
+
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>
