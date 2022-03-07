@@ -13,11 +13,16 @@
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <!-- Add your extensions here -->
+        <!-- Module and Project customization -->
         <moduleBuilder builderClass="org.alnx.example.ij.module.HttpDbModuleBuilder"
                        id="HTTPDB_STEP"
                        order="first"/>
         <moduleType id="DEMO_HTTPDB_MOD_TYPE" implementationClass="org.alnx.example.ij.module.HttpDbModuleType" />
+
+        <virtualFileSystem implementationClass="org.alnx.example.ij.vfs.HttpVirtualFileSystem"/>
+
+        <!-- Services-->
+        <projectService serviceImplementation="org.alnx.example.ij.services.SidecarService" />
     </extensions>
 
     <actions>
