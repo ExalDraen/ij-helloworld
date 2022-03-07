@@ -1,4 +1,4 @@
-package org.alnx.example.ij;
+package org.alnx.example.ij.services;
 
 import com.intellij.openapi.components.Service;
 import com.intellij.openapi.diagnostic.Logger;
